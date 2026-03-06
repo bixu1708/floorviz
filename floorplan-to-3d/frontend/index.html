@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor Plan to 3D House</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="panel">
+      <h1>Floor Plan ➜ 3D House</h1>
+      <p>Upload a floor plan image and generate a 3D wall model.</p>
+
+      <input id="fileInput" type="file" accept=".png,.jpg,.jpeg,.pdf" />
+      <button id="generateBtn">Generate 3D Model</button>
+
+      <div id="status" class="status">Waiting for upload...</div>
+      <small>
+        Controls: Left drag = rotate, Right drag = pan, Scroll = zoom.
+      </small>
+    </aside>
+
+    <main>
+      <div id="viewer"></div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
